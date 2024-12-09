@@ -11,7 +11,7 @@ const DefaultLayout = ({ children }: Props) => {
       <Header />
       {children}
       <footer>
-        <p>&copy; 2022 My Application</p>
+        <p>&copy; 2025 My Application</p>
       </footer>
     </div>
   );
