@@ -7,7 +7,7 @@ interface Props {
 
 const DefaultLayout = ({ children }: Props) => {
   return (
-    <div>
+    <div className="bg-red-100 text-black">
       <Header />
       {children}
       <footer>
