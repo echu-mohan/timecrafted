@@ -1,6 +1,14 @@
 import React from "react";
+import { Task } from "../types/task";
 
-const TaskItem = ({ taskDetails }) => {
+interface Props {
+  taskDetails: Task;
+}
+
+const TaskItem = (prop: Props) => {
+  const { taskDetails } = prop;
+  //   const taskDetails = prop.taskDetails;
+
   return (
     <div>
       <h3>{taskDetails.title}</h3>
