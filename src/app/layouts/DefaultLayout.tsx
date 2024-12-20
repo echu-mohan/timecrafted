@@ -7,10 +7,10 @@ interface Props {
 
 const DefaultLayout = ({ children }: Props) => {
   return (
-    <div>
+    <div className="bg-red-100 text-black">
       <Header />
       {children}
-      <footer>
+      <footer className=" grid justify-items-center mt-10 ">
         <p>&copy; 2025 My Application</p>
       </footer>
     </div>
