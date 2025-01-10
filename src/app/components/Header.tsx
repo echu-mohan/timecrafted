@@ -2,38 +2,40 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header>
-      <h1 className="flex justify-center mt-8 text-4xl italic hover:not-italic font-black">
-        Welcome to The Task Planner
-      </h1>
-      <nav>
-        <ul className="mt-10 mx-6 rounded-md border-4">
-          <div className="grid grid-cols-3 justify-between  ml-64">
-            <li>
-              <a
-                className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                href="/"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                href="/about"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                href="/contact"
-              >
-                Contact
-              </a>
-            </li>
-          </div>
+    <header className="bg-gradient-to-b from-white to-blue-50 text-gray-800 shadow-md">
+      <div className="py-6 text-center">
+        <h1 className="text-4xl font-extrabold">Welcome to The Task Planner</h1>
+        <p className="mt-2 text-lg text-gray-700">
+          Plan, Organize, and Achieve Your Goals
+        </p>
+      </div>
+
+      <nav className="mt-6">
+        <ul className="flex justify-center space-x-6">
+          <li>
+            <a
+              className="text-lg font-medium text-black hover:text-red-600 transition-all"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-lg font-medium text-black hover:text-red-600 transition-all"
+              href="/about"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-lg font-medium text-black hover:text-red-600 transition-all"
+              href="/contact"
+            >
+              Contact
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
