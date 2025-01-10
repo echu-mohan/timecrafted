@@ -7,7 +7,12 @@ import DefaultLayout from "./layouts/DefaultLayout";
 
 export default function Home() {
   const [toDoList, settoDoList] = useState([
-    { id: 3, title: "Boxing", dueDate: new Date("2024-12-03") },
+    {
+      id: 3,
+      title: "Boxing",
+      dueDate: new Date(),
+      daysRemaining: 0,
+    },
   ]);
 
   return (
